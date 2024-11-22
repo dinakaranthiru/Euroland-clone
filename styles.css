@@ -1,0 +1,308 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:  'Montserrat', sans-serif;
+    
+    
+   
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+nav{
+    background-color: #0f2440;
+    height: 77px;
+   
+
+    
+
+}
+ ul{
+    float: right;
+    list-style-type: none;
+    display: flex;
+    margin-top: 30px;
+   margin-right: 200px;
+    
+    
+}
+li a{
+    color: aliceblue;
+    padding: 5px 20px;
+    font-size: 14px;
+    font-weight: 100;
+    text-decoration: none;    
+   
+    
+}
+a:hover{
+    border: 1px solid;
+    border-radius: 5px;
+    
+    background-color:#20BDD8;
+    color: #000;
+}
+a:active{
+    background-color: aqua;
+}
+
+
+ .logo img{
+   width: 15%;
+   margin-top: 10px;
+   margin-left: 12%;
+   
+
+}
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    background: url(../EuroLand/Assets/banner.jpg) no-repeat top center fixed;
+    background-size: cover;
+  
+}
+
+.slider {
+    flex: 2;
+    position: relative;
+  
+    
+}
+
+
+
+
+
+.about-us {
+    flex: 1;
+    background-color: #0A2538;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.about-us h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 0;
+
+}
+
+.about-us p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+.about-us a{
+ text-decoration: none;
+}
+.head h2{
+    color:#0f2440;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.services-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 60px 100px;
+    background-color: white;
+}
+
+.service {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+}
+
+.service h3 {
+    font-size: 20px;
+    color: #0A2538;
+    margin-bottom: 10px;
+}
+
+.service hr {
+    width: 40px;
+    border: 1px solid #00ADEF;
+    margin: 10px auto;
+}
+
+.service p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+.title h1{
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 20px;
+    color: #0f2440;
+}
+.testimonials
+{
+    background: #efeded;
+}
+.main-title1{
+    text-align: center;
+}
+.main-title1 h2{
+    text-transform: uppercase;
+    color: #0f2440;
+    font-size: 34px;
+    padding-top: 30px;
+
+}
+.d-block1{
+    
+    margin-top: 30px;
+    width: 15%;
+    margin-left: 30%;
+    margin-bottom: 140px;
+    display: inline;
+}
+.carousel-caption1 p{
+    color: #858284;
+    text-align: justify;
+    padding-left: 40%;
+    margin-right: 50px;
+   
+    font-size: 20px;
+}
+.carousel-caption1 h3{
+  color: #20bdd8;
+  font-size: 20px;
+  padding-left: 40%;
+}
+.main-title h2{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.slider1{
+    height: 250px;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+.slide1-track{
+    display:flex;
+    width: calc(250px * 18);
+    animation: scroll 40s linear infinite;
+}
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 9));
+    }
+}
+.slide1{
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    
+}
+.slide1 img{
+    width: 100%;
+    transition: transform 1s;
+}
+.slide1 img:hover{
+    transform: translateZ(20px);
+}
+
+.slider1::before,
+.slider1::after{
+    background: linear-gradient(to right, rgba(255,255,255,1)0%,rgba(255,255,255,0)100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+}
+.slider1::before{
+    left: 0;
+    top: 0;
+}
+.slider1::after{
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+
+.work{
+    background: rgba(15, 36, 64, 0.84);
+    background: url(../EuroLand/Assets/completed-bg.jpg) center;
+    position: relative;
+    background-size: cover;
+    padding: 100px;
+    margin-bottom: -30px;
+    
+    
+}
+
+.completed-title h2{
+    text-align: center;
+    color: #fff;
+    font-size: 34px;
+    text-transform: uppercase;
+   
+   
+}
+.completed-single{
+  color: #fff;
+  
+  font-weight: 700;
+}
+.contact-information{
+    background-color: #223a5a;
+    
+    
+}
+
+.row{
+    margin-top: 30px;
+}
+.row a{
+    text-decoration: none;
+}
+footer{
+    background: #0f2440;
+    padding: 30px 0 40px;
+}
+.footer-about p{
+    color: #fff;
+}
+.footer-link{
+    color: #fff;
+}
+.siteinfo{
+    text-align: center;
+    color: #fff;
+}
